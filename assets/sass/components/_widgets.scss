@@ -1,0 +1,36 @@
+.widget-area {
+    .widget {
+        margin-bottom: 40px;
+        color: $color-muted;
+
+        a {
+            color: $color-text;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+
+            &:last-of-type {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+
+    .widget-title {
+        font-size: 16px;
+        color: $color-text;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .widget-area .widget {
+        background: #fff;
+        padding: 60px;
+        margin-bottom: 20px;
+    }
+}

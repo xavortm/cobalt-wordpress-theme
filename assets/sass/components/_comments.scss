@@ -1,0 +1,89 @@
+.comments-area {
+    margin-top: 20px;
+    padding: 60px;
+    background: white;
+
+    .form-submit {
+        .submit {
+            @extend .button;
+        }
+    }
+
+    .logged-in-as {
+        background: #00a7ff;
+        border-radius: 4px;
+        padding: 10px 20px;
+        margin: 10px 0 30px 0;
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
+
+    // Comment body
+    .says {
+        display: none;
+    }
+
+    .comment-author {
+        display: inline-block;
+    }
+
+    .comment-metadata {
+        display: inline-block;
+        color: $color-muted;
+        font-style: italic;
+        margin-left: 10px;
+
+        a { color: $color-muted; }
+    }
+
+    .reply {
+        margin-left: 45px;
+    }
+
+    .avatar {
+        margin-bottom: -20px;
+        margin-right: 10px;
+    }
+
+    .comment {
+        margin: 20px 0;
+        border-bottom: 1px solid #f0f0f0;
+        padding-bottom: 15px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    .comment-content {
+        margin-left: 45px
+    }
+
+    .comment-list {
+        margin-bottom: 20px;
+    }
+
+    ol.children {
+        margin-left: 20px;
+    }
+}
+
+
+.comment-form-comment {
+    margin: 0;
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    textarea,
+    input {
+        display: block;
+        width: 100%;
+    }
+}

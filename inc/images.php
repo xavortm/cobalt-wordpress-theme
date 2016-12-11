@@ -49,7 +49,7 @@ function cobalt_featured_image( $size = 'featured', $class = '', $attr = '' ) {
 	}
 
 	// Print the HTML of the image
-	echo "<picture class='entry-featured-image responsive-image ${class}'>";
+	echo "<picture class='entry-featured-image ${class}'>";
 
 	// use the standard featured image function
 	the_post_thumbnail( $size, $attr );

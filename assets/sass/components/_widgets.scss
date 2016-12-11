@@ -34,3 +34,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: $breakpoint-small) {
+    .widget-area .widget {
+        padding: 20px;
+    }
+}

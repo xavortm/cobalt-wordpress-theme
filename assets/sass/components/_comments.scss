@@ -3,6 +3,11 @@
     padding: 60px;
     background: white;
 
+    @media (max-width: $breakpoint-small) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .form-submit {
         .submit {
             @extend .button;

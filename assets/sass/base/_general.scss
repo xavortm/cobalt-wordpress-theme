@@ -192,6 +192,10 @@ object {
 
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
+	font-style: italic;
+	font-size: 14px;
+	color: $color-muted;
+	margin: 5px 0;
 }
 
 .wp-caption-text {

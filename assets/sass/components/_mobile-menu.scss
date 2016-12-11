@@ -35,9 +35,9 @@ $menu-container-border-bottom: 1px solid #f0f0f0;
 $menu-container-shadow:  0 10px 20px rgba(black, 0.1);
 
 $submenu-background: #f0f0f0;
-$submenu-border-top: 1px solid #ccc;
+$submenu-border-top: 1px solid #ededed;
 $submenu-shadow: none;
-$submenu-safe-zone: 16px;
+$submenu-safe-zone: 0;
 
 $menu-dropdown-arrow-line-height: 1.7;
 $menu-dropdown-arrow-size: 20px;
@@ -184,6 +184,7 @@ body.is-menu-opened {
 			opacity: 0;
 			transition: 0.2s;
 			transform: translateY(40px);
+			// top: 100%;
 		}
 
 		// Simply show the dropdown menu on hover
@@ -214,8 +215,8 @@ body.is-menu-opened {
 
 	.sub-menu {
 		position: absolute;
-		border: 1px solid #ccc;
-		top: calc(100% + #{$submenu-safe-zone - 2} );
+		border: 1px solid #ededed;
+		top: 100%;
 		background: rgba(white, 0.98);
 		min-width: 200px;
 		text-align: left;
@@ -223,6 +224,11 @@ body.is-menu-opened {
 
 		.menu-item {
 			display: relative;
+			border-bottom: 1px solid #ededed;
+
+			&:last-of-type {
+				border-bottom: none;
+			}
 		}
 
 		// Used for easier hover movement.
